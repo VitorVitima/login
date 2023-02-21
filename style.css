@@ -1,0 +1,93 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url('img/wallpaperflare-cropped.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+main{
+    background-color: #ffffff00;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ffffff80;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0000004b;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main > form > h1{
+    color: white;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+main > form > div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 205px;
+    height: 60px;
+}
+main > form > div > label{
+    height: 10px;
+    transition-duration: 0.3s;
+}
+main > form > div:has(input:focus) > label{
+    height: 25px;
+    transition-duration: 0.3s;
+}
+main > form > div > div.input{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: 15px;
+    padding: 0px 0px 5px 0px ;
+}
+main > form > div > div.input > input{
+    background-color: #ff000000;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+main > form > div > div.input > input:focus{
+    padding: 10px 10px 10px 10px;
+}
+main > form > div > div.input > div.svg{
+    color: white;
+}
+
+main  div#botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+main  div#botoes > input.button{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff62;
+    color: white;
+    box-shadow: 0px 0px 10px #0000003b;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+main  div#botoes > input.button:hover{
+    background-color: #00000073;
+    transition-duration: 0.3s;
+}
